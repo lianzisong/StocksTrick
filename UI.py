@@ -44,7 +44,7 @@ class ListView(Frame):
 class MulListView(Frame):
     def __init__(self, screen,columns,title,model):
         super(MulListView, self).__init__(screen,
-                                       screen.height * 3 // 4,
+                                       screen.height,
                                        screen.width ,
                                        hover_focus=True)
 
