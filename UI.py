@@ -99,8 +99,10 @@ class MainUI:
         self._title = title
         self._columns = list()
         self._model = model
+        mod = 100//len(title)
+        mod = str(mod)
         for item in title:
-            self._columns.append('<15%')
+            self._columns.append(str('<'+mod+'%'))
 
     
     def demo(self,screen):
